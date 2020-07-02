@@ -8,7 +8,7 @@ function Calculadora() {
 	const [
 		calcular,
 		concatenarNumero,
-		SOMA,
+		ADICAO,
 		SUBTRACAO,
 		DIVISAO,
 		MULTIPLICACAO
@@ -68,7 +68,7 @@ function Calculadora() {
 		setNumero2(null)
 		setOperacao(null)
 	}
-	
+
 	return (
 		<Jumbotron style={{
 			background: 'transparent !important',
@@ -115,7 +115,7 @@ function Calculadora() {
 					</Col>
 					<Col xs="3">
 						<Button variant="warning"
-							onClick={() => definirOperacao('/')}>
+							onClick={() => definirOperacao(DIVISAO)}>
 							/
 						</Button>
 					</Col>
@@ -141,7 +141,7 @@ function Calculadora() {
 					</Col>
 					<Col xs="3">
 						<Button variant="warning"
-							onClick={() => definirOperacao('*')}>
+							onClick={() => definirOperacao(MULTIPLICACAO)}>
 							*
 						</Button>
 					</Col>
@@ -167,7 +167,7 @@ function Calculadora() {
 					</Col>
 					<Col xs="3">
 						<Button variant="warning"
-							onClick={() => definirOperacao('+')}>
+							onClick={() => definirOperacao(ADICAO)}>
 							+
 						</Button>
 					</Col>
@@ -193,7 +193,7 @@ function Calculadora() {
 					</Col>
 					<Col xs="3">
 						<Button variant="warning"
-							onClick={() => definirOperacao('-')}>
+							onClick={() => definirOperacao(SUBTRACAO)}>
 							-
 						</Button>
 					</Col>

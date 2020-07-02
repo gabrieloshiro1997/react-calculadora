@@ -1,6 +1,6 @@
 export default function CalculadoraService() {
 
-	const SOMA = '+';
+	const ADICAO = '+';
 	const SUBTRACAO = '-';
 	const DIVISAO = '/';
 	const MULTIPLICACAO = '*';
@@ -10,7 +10,7 @@ export default function CalculadoraService() {
 		let resultado;
 
 		switch (operacao) {
-			case SOMA:
+			case ADICAO:
 				resultado = numero1 + numero2;
 				break;
 
@@ -60,7 +60,7 @@ export default function CalculadoraService() {
 	return [
 		calcular,
 		concatenarNumero,
-		SOMA,
+		ADICAO,
 		SUBTRACAO,
 		DIVISAO,
 		MULTIPLICACAO
