@@ -91,6 +91,7 @@ function Calculadora() {
 							className="text-right"
 							readOnly
 							value={txtNumeros}
+							data-testid="txtNumeros"
 						/>
 					</Col>
 				</Row>
