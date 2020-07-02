@@ -7,6 +7,7 @@ describe('Casos de teste do CalculadoraService', () => {
 
 	const [ 
 		calcular,
+		concatenarNumero,
 		SOMA,
 		SUBTRACAO,
 		DIVISAO,
@@ -41,5 +42,5 @@ describe('Casos de teste do CalculadoraService', () => {
 		
 		let operacaoInvalida = calcular(1, 4, '%');
 		expect(operacaoInvalida).toEqual(0);
-	})
+	});
 })
